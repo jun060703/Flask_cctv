@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/style.css') }}">
+    <title>CCTV</title>
+</head>
+<body>
+    <header>
+    <h1>실시간 CCTV</h1>
+</header>
+<nav>
+    <li class="kk"><a href="{{ url_for('page/') }}">실시간 화면보기</a></li>
+    <li class="kk"><a href="{{ url_for('page2') }}">녹화된 영상보기</a></li>
+    <li class="kk"><a href="{{ url_for('page3') }}">출입했던 시간 보기</a></li>
+</nav>
+<section>
+    <img src="{{ url_for('video_feed') }}">
+</section>
+<footer>
+    쓸말이없네요 copyright@
+</footer>
+</body>
+</html>
